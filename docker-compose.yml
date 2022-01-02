@@ -1,0 +1,8 @@
+services:
+    app:
+        build:
+            context: .
+        command: sleep infinity
+        volumes:
+            - "./code:/home/dotnet/code"
+        working_dir: /home/dotnet/code

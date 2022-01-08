@@ -6,6 +6,6 @@ A containerized .NET development environment using Docker Compose and Visual Stu
 
 The directory /home/dotnet/code in the container is a volume mapped to ./code on the host, so a typical workflow could be
 
-1. Clone this repository to directory _d_.
-2. Clone a .NET repository into _d/code_.
-3. Open _d_ in Visual Studio Code, in a remote container, and hack away.
+1. Clone this repository to directory _d_ on the host machine.
+2. Clone a .NET project, like [this](https://github.com/meliasson/advent-of-code), into _d/code_, still on the host machine.
+3. Open _d_ in VS Code, still on the host machine (in a remote container; VS Code will likely prompt you to do so since this repository contains a .devcontainer.json file) and hack away.

@@ -1,18 +1,23 @@
-﻿namespace Calendar;
-
-public static class Day1
+namespace Calendar;
+public class Day1
   {
     public static int[] ParseInput(IEnumerable<String> input)
     {
-        var filename = "Calendar/day1input";
-        var depths = input.Select(depth => int.Parse(depth));
-        return depths.ToArray();
+        return input.Select(depth => int.Parse(depth)).ToArray();
     }
 
-    public static int Solve(int[] depths)
+    public static int SolvePart1(int[] depths)
     {
         return depths
             .Skip(1)
+            .Select((x, i) => x > depths[i])
+            .Count(x => x);
+    }
+
+    public static int SolvePart2(int[] depths)
+    {
+        return depths
+            .Skip(3)
             .Select((x, i) => x > depths[i])
             .Count(x => x);
     }

@@ -4,7 +4,7 @@ A containerized .NET development environment using Docker Compose and Visual Stu
 
 ## Get started
 
-The directory /home/dotnet/code in the container is a volume mapped to ./code on the host, so a typical workflow could be
+The directory _/home/dotnet/code_ in the container is a volume mapped to _./code_ on the host, so a typical workflow could be
 
 1. Clone this repository to directory _d_ on the host machine.
 2. Clone a .NET project, like [this](https://github.com/meliasson/advent-of-code), into _d/code_, still on the host machine.

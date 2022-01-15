@@ -7,6 +7,7 @@
     "workspaceFolder": "/home/dotnet/code",
     "extensions": [
         "lfs.vscode-emacs-friendly",
+        "kahole.magit",
         "ms-dotnettools.csharp",
         "josefpihrt-vscode.roslynator",
         // "formulahendry.dotnet-test-explorer",
